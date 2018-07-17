@@ -1,0 +1,12 @@
+任意拓扑结构下的ADMM
+问题都为qp问题
+发现，需要将问题scaled到-1~1之间，才能达到很好的求解效果，而问题的scaled就是
+多维问题与一维问题的区别所在。
+// GenerateTopology.m
+根据拓扑矩阵rel_mat随机产生对应的consensus optimization problem
+使用者可以根据自己的需求，更改该函数，生成自己的consensus optimization问题
+// ADMM_DR_sy.m
+最终的ADMM synchronous algorithm版本
+采用over relaxization及adaptive parameter
+变参数部分，参数设置与boyd书中一致
+rho参数选择为10为好
