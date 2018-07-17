@@ -1,0 +1,10 @@
+为异步问题
+// ADMM_transfer.m and ADMM_MPC
+为集中式问题构造及求解
+// ADMM_transfer2.m and ADMM_DR_sy, ADMM_DR_asy and ADMM_DR_asy2
+为decentralized 问题的构造及求解
+ADMM_DR_sy为同步
+ADMM_DR_sy_general为通用问题程序，其中参数的选择与ADMM_DR_sy相同
+%% 参数的选择对于算法的效果影响很大，而且选择也没有一个定则，比较困难
+ADMM_DR_asy 为非ARock算法版本，虽然收敛，但是无法证明
+ADMM_DR_asy_ARock 为ARock版本，可以证明，收敛速度期待改进
