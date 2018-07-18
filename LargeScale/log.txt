@@ -1,0 +1,12 @@
+日期：2018/7/18
+作者：wzt
+
+说明：
+已经完成了38辆车的运动存储（Vg1~Vg7），以及场景等其他存储（Data）
+1，运行Catch,对车辆运动情况进行整合
+2，load Data
+3，Result_video(Campus, Veh_group, 0.05, 25, 'Largescale')生成视频
+4，snapshot(Campus, Veh_group, 0.05, 25, 1, 289)
+    axis([20 116 20 116])
+    axis off
+    生成某一时刻的截图，目前是190 228 259 289
